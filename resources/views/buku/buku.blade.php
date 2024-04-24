@@ -35,8 +35,8 @@
                                 <td>{{$ambil->harga_jual}}</td>
                                 <td>{{$ambil->diskon}}</td>
                                 <td>
-                                    <a class="btn btn-sm btn-primary" href="">Detail</a>
-                                    <a class="btn btn-sm btn-primary" href="">Detail</a>
+                                    <a class="btn btn-sm btn-primary"  href="{{url('buku/edit/'. $ambil->id_buku)}}"><i class="bi bi-pencil"></i></a>
+                                    <a class="btn btn-sm btn-danger" href="{{url('buku/hapus/'. $ambil->id_buku)}}"><i class="bi bi-trash"></i></a>
                                 </td>
                             </tr>
                         @endforeach

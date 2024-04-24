@@ -36,4 +36,34 @@ class AdminController extends Controller
         $p->create($cek);
         return redirect('buku');
     }
+
+    public function edit($id)
+    {
+        $p = new buku();
+        return view('buku.edit', ['editbu' => $p->find($id)]);
+    }
+    public function update(Request $request, $id)
+    {
+        $p = new buku();
+        $validasi = $request->validate([
+            'judul' => 'required',
+            'penulis' => 'required',
+            'penerbit' => 'required',
+            'tahun_terbit' => 'required',
+            'stok' => 'required',
+            'harga_pokok' => 'required',
+            'harga_jual' => 'required',
+            'diskon' => 'required',
+        ]);
+        $p = $p->find($id)->update($validasi);
+        return redirect('buku')->with('Pesan', 'Update Buku Berhasil');
+    }
+
+    public function hapus($id)
+    {
+        $p = new buku();
+        $p = $p->find($id);
+        $p->delete();
+        return back();
+    }
 }

@@ -6,35 +6,35 @@
                 <h6 class="mb-0">Data</h6>
             </div>
             <div class="">
-                <form action="{{ url('buku/tambah') }}" method="post">
+                <form action="{{ url('kasir/tambah') }}" method="post">
                     @csrf
                     <table class="table text-start align-middle table-bordered table-hover mb-0">
                         <div class="row mb-3">
-                            <label class="col-sm-2 col-form-label" for="basic-default-name">Judul</label>
+                            <label class="col-sm-2 col-form-label" for="basic-default-name">nama</label>
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" name="judul" id="Judul"
-                                    placeholder="Judul">
+                                <input type="text" class="form-control" name="nama" id="nama"
+                                    placeholder="nama">
                             </div>
                         </div>
                         <div class="row mb-3">
-                            <label class="col-sm-2 col-form-label" for="basic-default-name">penulis</label>
+                            <label class="col-sm-2 col-form-label" for="basic-default-name">alamat</label>
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" name="penulis" id="penulis"
-                                    placeholder="penulis">
+                                <input type="text" class="form-control" name="alamat" id="alamat"
+                                    placeholder="alamat">
                             </div>
                         </div>
                         <div class="row mb-3">
-                            <label class="col-sm-2 col-form-label" for="basic-default-name">penerbit</label>
+                            <label class="col-sm-2 col-form-label" for="basic-default-name">telepon</label>
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" name="penerbit" id="penerbit"
-                                    placeholder="penerbit">
+                                <input type="text" class="form-control" name="telepon" id="telepon"
+                                    placeholder="telepon">
                             </div>
                         </div>
                         <div class="row mb-3">
-                            <label class="col-sm-2 col-form-label" for="basic-default-name">Tahun Terbit</label>
+                            <label class="col-sm-2 col-form-label" for="basic-default-name">username</label>
                             <div class="col-sm-6">
-                                <input type="number" class="form-control" name="tahun_terbit" id="tahun_terbit"
-                                    placeholder="Tahun Terbit">
+                                <input type="number" class="form-control" name="username" id="username"
+                                    placeholder="username">
                             </div>
                         </div>
                         <div class="row mb-3">
@@ -44,17 +44,17 @@
                             </div>
                         </div>
                         <div class="row mb-3">
-                            <label class="col-sm-2 col-form-label" for="basic-default-name">harga pokok</label>
+                            <label class="col-sm-2 col-form-label" for="basic-default-name">password</label>
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" name="harga_pokok" id="harga_pokok"
-                                    placeholder="Harga Pokok">
+                                <input type="text" class="form-control" name="password" id="password"
+                                    placeholder="password">
                             </div>
                         </div>
                         <div class="row mb-3">
-                            <label class="col-sm-2 col-form-label" for="basic-default-name">harga jual</label>
+                            <label class="col-sm-2 col-form-label" for="basic-default-name">akses</label>
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" name="harga_jual" id="harga_jual"
-                                    placeholder="Harga Jual">
+                                <input type="text" class="form-control" name="akses" id="akses"
+                                    placeholder="akses">
                             </div>
                         </div>
                         <div class="row mb-3">
